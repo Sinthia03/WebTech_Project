@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="../CSS/EditProfile.css">
+
+</head>
+<body>
+<form id ="editprofile" class ="edit-card" method ="post">
+    <h1>Edit Profile!</h1>
+
+<img src = "http://localhost/Web%20tech/Project/USER/Image/edituser.jpg" id ="profile-edit" alt="profile">
+<label>Name:</label>
+<input type ="text" name ="name" id="editname" value="Sinthia">
+<p class="err" id ="nameError">
+</p>
+
+<label>Email:</label>
+<input type ="email" name ="email" id="editemail" value="Sinthia@gmai.com">
+<p class="err" id ="EmailError">
+</p>
+
+
+<label> Update Profile Picture</label>
+<input type ="file" name ="avatar" id="editavatar" accept="image/*">
+<p class="err" id ="avatarError">
+</p>
+
+
+<input type = "submit" value ="Update Profile">
+<input type ="button" value ="Back to Dashboard" onclick="window.location.href='userdashboard.php'" class ="secondary-btn">
+    
+
+
+<p class = "ok" id = "Success">
+</p>
+<p class = "err" id = "Error">
+</p>
+</form>
+
+
+<script src ="EditProfile.js"></script>
+
+</body>
+</html>

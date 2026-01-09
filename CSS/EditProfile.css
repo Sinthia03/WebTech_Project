@@ -1,0 +1,107 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins',sans-serif;
+}
+body{
+
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rosybrown;
+
+}
+
+.edit-card{
+width: 100%;
+max-width: 400px;
+padding: 30px;
+border-radius: 15px;
+background: rgba(103, 60, 35, 0.15)
+backdrop-filter: blur(12px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+text-align:center;
+color:#fff;
+
+}
+
+.edit-card h1{
+ margin-bottom: 15px;
+ font-size: 26px;
+ color:rgb(118, 53, 10);
+}
+
+#profile-edit{
+
+    width:120px;
+    height: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+
+label{
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #8e2a10;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] 
+{
+width:100%;
+padding: 12px;
+margin-top: 6px;
+border: none;
+border-radius: 8px;
+background: rgba(255,255,255,0.7);
+ font-size: 14px;
+ color:rgb(161, 161, 153);
+}
+
+input[type="submit"],
+input[type="button"] {
+
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    font-size:15px;
+    font-weight:600;
+
+}
+
+input[type="submit"]:hover{
+
+    background: saddlebrown ;
+}
+
+.secondary-btn{
+
+    background: transparent;
+    border:1.5px solid #8e2a10;
+    color: saddlebrown;  
+}
+.secondary-btn:hover {
+background-color: saddlebrown;
+color: #fff;
+ transform: translate(-2px);
+}
+
+.err {
+    color: #8e2a10;
+    font-size: 13px;
+    margin: 4px 0;
+}
+.ok {
+    color: #8e2a10;
+    font-size: 13px;
+    margin: 4px 0;
+    text-align: center;
+}
