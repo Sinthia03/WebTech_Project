@@ -1,3 +1,7 @@
+
+<?php include "../CONTROL/Edituservalidate.php";?>
+
+
 <!DOCTYPE html>
 
 <head>
@@ -8,40 +12,40 @@
 
 </head>
 <body>
-<form id ="editprofile" class ="edit-card" method ="post">
+   <form class="edit-card"
+      method="post"
+      enctype="multipart/form-data">
+
     <h1>Edit Profile!</h1>
 
-<img src = "http://localhost/Web%20tech/Project/USER/Image/edituser.jpg" id ="profile-edit" alt="profile">
-<label>Name:</label>
-<input type ="text" name ="name" id="editname" value="Sinthia">
-<p class="err" id ="nameError">
-</p>
+    <img src="<?php echo $profileImage.'?v='.time(); ?>" id="profile-edit" alt="profile">
 
-<label>Email:</label>
-<input type ="email" name ="email" id="editemail" value="Sinthia@gmai.com">
-<p class="err" id ="EmailError">
-</p>
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Enter your name">
 
+    <label>Email:</label>
+    <input type="email" name="email" placeholder ="Enter your email">
 
-<label> Update Profile Picture</label>
-<input type ="file" name ="avatar" id="editavatar" accept="image/*">
-<p class="err" id ="avatarError">
-</p>
+    <label>Update Profile Picture</label>
+    <input type="file" name="avatar" accept="image/*">
 
-
-<input type = "submit" value ="Update Profile">
-<input type ="button" value ="Back to Dashboard" onclick="window.location.href='userdashboard.php'" class ="secondary-btn">
     
+    <?php if (!empty($errorMsg)) { ?>
+        <p class="err"><?php echo $errorMsg; ?></p>
+    <?php } ?>
 
+    
+    <?php if (!empty($successMsg)) { ?>
+        <p class="ok"><?php echo $successMsg; ?></p>
+    <?php } ?>
 
-<p class = "ok" id = "Success">
-</p>
-<p class = "err" id = "Error">
-</p>
+    <input type="submit" value="Update Profile">
+    <input type="button"
+           value="Back to Dashboard"
+           onclick="window.location.href='UserDashboard.php'"
+           class="secondary-btn">
+
 </form>
-
-
-<script src ="EditProfile.js"></script>
-
+    
 </body>
 </html>
