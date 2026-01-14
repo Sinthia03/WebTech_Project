@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
-    <link rel="stylesheet" href="../CSS/EditProfile.css">
+    <link rel="stylesheet" href="../CSS/editprofile.css">
 
 </head>
 <body>
