@@ -32,7 +32,7 @@ session_start();
                     <button class="btn" onclick="window.location.href='UserProfile.php'">View My Profile</button>
                     <button class="btn" onclick="window.location.href='RoomInventory.php'"> Book Room</button>
                     
-                    <button class="btn">See Bookings</button>
+                    <button class="btn">FeedBack</button>
                 </div>
             </section>
             
